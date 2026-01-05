@@ -30,5 +30,20 @@ class Process
     {
         State=newState;
     }
+    public void ExecuteOneUnit()
+    {
+        if(State != ProcessState.Running)
+            return;
+
+        if(_remainingTime== 0)
+            State = ProcessState.Terminated;
+        
+        if(_remainingTime > 0)
+            _remainingTime--;
+    }
+    public override string ToString()
+    {
+        return $"PID {pid} , Name: {Name}, State: {State}, Remaining Time: {RemainingTime}";
+    }
 
 }
