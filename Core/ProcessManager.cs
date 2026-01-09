@@ -27,8 +27,6 @@ namespace MiniOS.Core
             _processTable.Add(process);
 
             Return process;
-
-
         }
 
         public void KillProcess(int pid)
@@ -54,8 +52,22 @@ namespace MiniOS.Core
 
             foreach (Var Process in _processTable)
             {
-                if(Process.State == Process.)
+                if(Process.State == Process.GetReadyProcess)
+                {
+                    Process.SetState(newState);
+                }
+                else
+                {
+                    return Console.WriteLine("the process is not sceduled.");
+                }
             }
+        }
+        
+        public void displaycurrentprocess()
+        {
+            Console.WriteLine("the process after the sceduling  ")
+            return _processTable;
+
         }
     }
 }
