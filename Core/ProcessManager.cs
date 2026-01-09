@@ -1,5 +1,8 @@
 using System;
 using System.Linq.Expressions;
+using System.Collections.Generic;
+using Microsoft.VisualBasic;
+using System.Diagnostics;
 
 
 namespace MiniOS.Core
@@ -15,12 +18,12 @@ namespace MiniOS.Core
             _nextPid =1;
         }
 
-        Public Process CreateProcess(String name, int priority, int burstTime)
+        public Process CreateProcess(String name, int priority, int burstTime)
         {
             int pid = _nextPid;
             Process process = new Process(pid,name,priority,burstTime);
 
-            Process.SetState(ProcessState.Ready);
+            process.SetState(ProcessState.Ready);
             _processTable.Add(process);
 
             Return process;
@@ -32,7 +35,7 @@ namespace MiniOS.Core
         {
             foreach (var process  in _processTable)
             {
-                if(Process.Pid = pid)
+                if(Process.Pid == pid)
                 {
                     process.SetState(processState.Terminated);
                     return;
@@ -47,7 +50,12 @@ namespace MiniOS.Core
 
         public List<Process> GetReadyProcess()
         {
-            list<process> ReadyProcess = new List<Process>
+            list<process> ReadyProcess = new List<Process>();
+
+            foreach (Var Process in _processTable)
+            {
+                if(Process.State == Process.)
+            }
         }
     }
 }
