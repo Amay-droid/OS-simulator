@@ -65,7 +65,7 @@ namespace MiniOS.Core
         
         public void displaycurrentprocess()
         {
-            Console.WriteLine("the process after the sceduling  ")
+            Console.WriteLine("the process after the sceduling  ");
             return _processTable;
 
         }
