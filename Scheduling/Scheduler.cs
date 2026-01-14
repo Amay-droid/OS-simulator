@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Runtime.CompilerServices;
 using System.Security.Cryptography.X509Certificates;
-using MiniOs.Core;
+using MiniOS.Core;
 
-namespace MiniOs.Scheduling
+namespace MiniOS.Scheduling
 {
     
     public abstract class Scheduler

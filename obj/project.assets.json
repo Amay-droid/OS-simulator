@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\MiniOS\\MiniOS.csproj",
+      "projectUniqueName": "D:\\PROJECTs\\MiniOS\\MiniOS.csproj",
       "projectName": "MiniOS",
-      "projectPath": "D:\\MiniOS\\MiniOS.csproj",
+      "projectPath": "D:\\PROJECTs\\MiniOS\\MiniOS.csproj",
       "packagesPath": "C:\\Users\\amayb\\.nuget\\packages\\",
-      "outputPath": "D:\\MiniOS\\obj\\",
+      "outputPath": "D:\\PROJECTs\\MiniOS\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\amayb\\AppData\\Roaming\\NuGet\\NuGet.Config"
