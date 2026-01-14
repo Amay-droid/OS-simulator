@@ -1,0 +1,5 @@
+D:\MiniOS\obj\Debug\net10.0\MiniOS.GeneratedMSBuildEditorConfig.editorconfig
+D:\MiniOS\obj\Debug\net10.0\MiniOS.AssemblyInfoInputs.cache
+D:\MiniOS\obj\Debug\net10.0\MiniOS.AssemblyInfo.cs
+D:\MiniOS\obj\Debug\net10.0\MiniOS.csproj.CoreCompileInputs.cache
+D:\MiniOS\obj\Debug\net10.0\MiniOS.sourcelink.json
