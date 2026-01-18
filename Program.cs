@@ -1,20 +1,22 @@
 ﻿using System;
 using MiniOS.Core;
+using MiniOS.Scheduling;
 
 class Program
 {
     static void Main()
     {
         ProcessManager processManager = new ProcessManager();
-        bool running  = true;
+        bool running = true;
 
         while (running)
         {
             Console.Clear();
-            Console.WriteLine("====== MINI OS SIMULATOR ======\n");
-            Console.WriteLine("1. Create Process\n");
-            Console.WriteLine("2. View All Processes\n");
-            Console.WriteLine("3. Exit\n");
+            Console.WriteLine("====== MINI OS SIMULATOR ======");
+            Console.WriteLine("1. Create Process");
+            Console.WriteLine("2. View All Processes");
+            Console.WriteLine("3. Run FCFS Scheduler");
+            Console.WriteLine("4. Exit");
             Console.Write("Choice: ");
 
             string choice = Console.ReadLine();
@@ -46,6 +48,13 @@ class Program
                     break;
 
                 case "3":
+                    FCFSScheduler fcfs = new FCFSScheduler(processManager);
+                    fcfs.Run();
+                    Console.WriteLine("FCFS Scheduling completed.");
+                    Console.ReadKey();
+                    break;
+
+                case "4":
                     running = false;
                     break;
 

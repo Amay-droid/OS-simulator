@@ -16,6 +16,6 @@ namespace MiniOS.Scheduling
             ProcessManager = processManager;
         }
 
-        public abstract void run();
+        public abstract void Run();
     }
 }

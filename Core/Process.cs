@@ -1,49 +1,54 @@
 using System;
 
-
-class Process
+namespace MiniOS.Core
 {
-    public enum ProcessState
+    public class Process
     {
-        New, Ready, Running, Waiting, Terminated
+        public enum ProcessState
+        {
+            New, Ready, Running, Waiting, Terminated
+            
+        }
         
-    }
-    
-    public  int pid {get; }
-    public String Name {get; }
-    public int Priority {get; }
-    public int BrustTime {get; }
-    private int _remainingTime;
-    public int RemainingTime => _remainingTime;
+        public int Pid {get; }
+        public String Name {get; }
+        public int Priority {get; }
+        public int BurstTime {get; }
+        private int _remainingTime;
+        public int RemainingTime => _remainingTime;
 
-    public ProcessState State {get; private set; }
-    public Process(int pid, string name, int priority, int burstTime)
-    {
-        Pid = pid;
-        Name= name;
-        Priority=priority;
-        BrustTime=BrustTime;
-        _remainingTime= burstTime;
-        State=ProcessState.New;
-    }
-    public void SetState(ProcessState newState)
-    {
-        State=newState;
-    }
-    public void ExecuteOneUnit()
-    {
-        if(State != ProcessState.Running)
-            return;
+        public ProcessState State {get; private set; }
 
-        if(_remainingTime== 0)
-            State = ProcessState.Terminated;
-        
-        if(_remainingTime > 0)
-            _remainingTime--;
-    }
-    public override string ToString()
-    {
-        return $"PID {pid} , Name: {Name}, State: {State}, Remaining Time: {RemainingTime}";
-    }
+        public Process(int pid, string name, int priority, int burstTime)
+        {
+            Pid = pid;
+            Name= name;
+            Priority=priority;
+            BurstTime= burstTime;
+            _remainingTime= burstTime;
+            State=ProcessState.New;
+        }
 
+        public void SetState(ProcessState newState)
+        {
+            State=newState;
+        }
+
+        public void ExecuteOneUnit()
+        {
+            if(State != ProcessState.Running)
+                return;
+
+            if(_remainingTime > 0)
+                _remainingTime--;
+
+            if(_remainingTime == 0)
+                State = ProcessState.Terminated;
+        }
+
+        public override string ToString()
+        {
+            return $"PID {Pid} , Name: {Name}, State: {State}, Remaining Time: {RemainingTime}";
+        }
+    }
 }
