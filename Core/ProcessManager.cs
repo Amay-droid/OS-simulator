@@ -22,7 +22,7 @@ namespace MiniOS.Core
             int pid = _nextPid++;
             Process process = new Process(pid,name,priority,burstTime);
 
-            process.SetState(ProcessState.Ready);
+            process.SetState(Process.ProcessState.Ready);
             _processTable.Add(process);
 
             return process;
@@ -34,7 +34,7 @@ namespace MiniOS.Core
             {
                 if(process.Pid == pid)
                 {
-                    process.SetState(ProcessState.Terminated);
+                    process.SetState(Process.ProcessState.Terminated);
                     return;
                 }
             }
@@ -51,7 +51,7 @@ namespace MiniOS.Core
 
             foreach (var process in _processTable)
             {
-                if(process.State == ProcessState.Ready)
+                if(process.State == Process.ProcessState.Ready)
                 {
                     ReadyProcess.Add(process);
                 }

@@ -8,3 +8,13 @@ D:\PROJECTs\MiniOS\obj\Debug\net10.0\MiniOS.AssemblyInfoInputs.cache
 D:\PROJECTs\MiniOS\obj\Debug\net10.0\MiniOS.AssemblyInfo.cs
 D:\PROJECTs\MiniOS\obj\Debug\net10.0\MiniOS.csproj.CoreCompileInputs.cache
 D:\PROJECTs\MiniOS\obj\Debug\net10.0\MiniOS.sourcelink.json
+D:\PROJECTs\MiniOS\bin\Debug\net10.0\MiniOS.exe
+D:\PROJECTs\MiniOS\bin\Debug\net10.0\MiniOS.deps.json
+D:\PROJECTs\MiniOS\bin\Debug\net10.0\MiniOS.runtimeconfig.json
+D:\PROJECTs\MiniOS\bin\Debug\net10.0\MiniOS.dll
+D:\PROJECTs\MiniOS\bin\Debug\net10.0\MiniOS.pdb
+D:\PROJECTs\MiniOS\obj\Debug\net10.0\MiniOS.dll
+D:\PROJECTs\MiniOS\obj\Debug\net10.0\refint\MiniOS.dll
+D:\PROJECTs\MiniOS\obj\Debug\net10.0\MiniOS.pdb
+D:\PROJECTs\MiniOS\obj\Debug\net10.0\MiniOS.genruntimeconfig.cache
+D:\PROJECTs\MiniOS\obj\Debug\net10.0\ref\MiniOS.dll
