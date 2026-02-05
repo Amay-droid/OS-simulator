@@ -28,21 +28,6 @@ This simulator is designed for **learning, demonstration, and resume showcasing*
 
 ---
 
-## Project Structure
-
-```
-MiniOS/
-├── Core/
-│   ├── Process.cs
-│   └── ProcessManager.cs
-├── Scheduling/
-│   ├── Scheduler.cs
-│   └── FCFSScheduler.cs
-├── Program.cs
-├── MiniOS.csproj
-```
-
----
 
 ## How to Run
 
